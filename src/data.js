@@ -2,6 +2,7 @@ import componentsImg from './assets/components.png';
 import jsxImg from './assets/jsx-ui.png';
 import propsImg from './assets/config.png';
 import stateImg from './assets/state-mgmt.png';
+import logojsImg from './assets/logojs.png';
 
 export const CORE_CONCEPTS = [
   {
@@ -23,5 +24,10 @@ export const CORE_CONCEPTS = [
     image: stateImg,
     title: 'State',
     description: 'Permite gerir dados que mudam na interface.',
+  },
+  {
+    image: logojsImg,
+    title: 'Logo JS',
+    description: 'Símbolo da linguagem JavaScript.',
   },
 ];
