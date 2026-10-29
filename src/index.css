@@ -8,8 +8,8 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
 
-  color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
+  color: #17082a;
+  background: radial-gradient(#6319b3, #20043d);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,10 +54,45 @@ main {
   margin: auto;
 }
 
+.botao {
+  padding: 0.65rem 1.1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  background: #7925d3;
+  color: #ebe7ef;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+  background: #922ff2;
+  box-shadow: 0 4px 12px rgba(121, 37, 211, 0.35);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: 3px solid #03d5ff;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
 #core-concepts {
   padding: 2rem;
   border-radius: 6px;
-  background-color: #140524;
+  background-color: #7259ab;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -65,7 +100,7 @@ main h2 {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   margin: 0 0 1.5rem 0;
-  color: #a18aba;
+  color: #17082a;
 }
 
 #core-concepts ul {
@@ -153,10 +188,26 @@ main h2 {
 section {
   padding: 20px;
   margin: 20px 0;
-  background-color: #000000;
+  background-color: #7259ab;
   border-radius: 10px;
 }
 
 section h2 {
   text-align: center;
+}
+.botao-especial {
+  padding: 0.65rem 1.1rem;
+  border: 2px solid #03d5ff;
+  border-radius: 20px;
+  background-color: #20043d;
+  color: #03d5ff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao-especial:hover {
+  background-color: #03d5ff;
+  color: #20043d;
 }
